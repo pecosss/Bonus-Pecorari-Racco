@@ -38,15 +38,15 @@ public:
 	
 	/// @name GETTERS
     /// @{
-	float GetVSide();
-	float GetHSide();
+	float Getd();
+	float GetD();
     float GetArea();
     float GetPerimeter();
     /// @}
 
     /// @name DEBUG and SERIALIZATION
     /// @{
-    virtual void Dump();
+    void Dump() override;
     /// @}
 };
 

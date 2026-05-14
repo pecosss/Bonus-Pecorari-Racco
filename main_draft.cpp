@@ -34,7 +34,12 @@ int main()
         shapes[i]->Dump();
     }
 
-    
+    // 4. Distruzione figure
+    cout << endl << "===== DISTRUTTORI =====" << endl;
+
+    for (int i = 0; i < nShapes; i++) {
+        delete shapes[i];
+    }
 
     cout << endl << "===== FINE TEST =====" << endl;
 

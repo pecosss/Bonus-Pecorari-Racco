@@ -5,6 +5,7 @@
 
 #include "CRhombus.h"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -92,33 +93,39 @@ void Rhombus::Reset()
    GETTERS
    ---------------------------- */
    
-/// @brief to get the height of the Rhombus
-/// @return height
-float Rhombus::GetVSide()
+/// @brief to get the smaller diagonal of the Rhombus
+/// @return d
+float Rhombus::Getd()
 {
-	return height;
-    
+    float d = height; 
+	return d;
 }
 
-/// @brief to get the width of the Rhombus
-/// @return width
-float Rhombus::GetHSide()
+/// @brief to get the larger diagonal of the Rhombus
+/// @return D
+float Rhombus::GetD()
 {
-    return width;
+    float D = width; 
+    return D;
 }
 
 /// @brief computes the area of the Rhombus
 /// @return area 
 float Rhombus::GetArea()
 {
-    return width * height;
+    float d = height;
+    float D = width; 
+    return (d * D) / 2;
 }
 
 /// @brief computes the perimeter of the Rhombus
 /// @return perimeter 
 float Rhombus::GetPerimeter()
 {
-    return 2.0 * (width + height);
+    float d = height;
+    float D = width; 
+    float l = sqrt(pow(d / 2.0, 2) + pow(D / 2.0, 2));
+    return (4.0 * l);
 }
 
 /* ----------------------------
@@ -130,12 +137,16 @@ void Rhombus::Dump()
 {
 	cout << endl <<  "----------------------" << endl;
     cout << "Rhombus Dump:" << endl << endl;
-	
-	Shape::Dump();
-	
     
+    cout << "Shape Dump:" << endl;
+    cout << "  Position: (" << x << ", " << y << ")" << endl;
+    cout << "  Larger diagonal:  " << width << endl;
+    cout << "  Smaller diagonal: " << height << endl;
+    cout << "  Bounding Box Area:   " << GetBoundingBoxArea() << endl;
+    cout << endl;
     cout << "  Figure area:         " << GetArea() << endl;
     cout << "  Figure perimeter:    " << GetPerimeter() << endl;
     cout << "  Text:                " << (text ? text : "(null)") << endl;
 	cout << endl;
+
 }
