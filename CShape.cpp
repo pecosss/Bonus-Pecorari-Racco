@@ -182,7 +182,15 @@ void Shape::Reset()
    
 void Shape::Scale(float sf) 
 {
-	// TO DO
+	if (sf <= 0.0){
+        WarningMessage("Scale: the value of rescaling isn't available (0)");
+        sf = 1.0;
+        return;
+    }
+    else {
+        width *= sf;
+        height *= sf;
+    }
 }
 
 /* ----------------------------
