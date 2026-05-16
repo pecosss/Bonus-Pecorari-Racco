@@ -22,7 +22,6 @@ int main()
     shapes[nShapes++] = new Rhombus(2, 2, 10, 6);
     shapes[nShapes++] = new IsoscelesTriangle(10, 20, 9, 4);
 
-
     // 2. Impostazione testo
     shapes[0]->SetText("rettangolo");
     shapes[1]->SetText("rombo");
