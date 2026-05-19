@@ -151,11 +151,13 @@ void Rhombus::Dump()
 
 }
 
+/// @brief print basicInfo of the rhombus (x, y, d, D, bounding box)
 void Rhombus::basicInfo(){
     cout << "Rhombus dump:" << endl;
     Shape::basicInfo();
 }
 
+/// @brief print otherInfo of the rhombus (area, perimeter, text)
 void Rhombus::otherInfo(){
     Shape::otherInfo();
 }

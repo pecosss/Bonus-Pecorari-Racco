@@ -140,11 +140,13 @@ void Rectangle::Dump()
 	cout << endl;
 }
 
+/// @brief print basicInfo of the rectangle (x, y, w, h, bounding box)
 void Rectangle::basicInfo(){
     cout << "Rectangle dump:" << endl;
     Shape::basicInfo();
 }
 
+/// @brief print otherInfo of the rectangle (area, perimeter, text)
 void Rectangle::otherInfo(){
     Shape::otherInfo();
 }

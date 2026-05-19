@@ -1,4 +1,4 @@
-/*! \file CShape.h
+/*! \file CShape.cpp
     \brief implementation of class Shape
 	\author Alessio Pecorari, Davide Racco
 */
@@ -366,6 +366,7 @@ void Shape::Dump()
 	cout << endl;
 }
 
+/// @brief print basicInfo of the polygon (x, y, w, h, bounding box)
 void Shape::basicInfo()
 {
     std::cout << "  Position: (" << x << ", " << y << ")" << std::endl;
@@ -376,6 +377,7 @@ void Shape::basicInfo()
 	cout << endl;
 }
 
+/// @brief print otherInfo of the polygon (area, perimeter, text)
 void Shape::otherInfo()
 {
     cout << "  Figure area:         " << GetArea() << endl;

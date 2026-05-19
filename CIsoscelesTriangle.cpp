@@ -148,11 +148,13 @@ void IsoscelesTriangle::Dump()
 
 }
 
+/// @brief print basicInfo of the isoscelesTriangle (x, y, w, h, bounding box)
 void IsoscelesTriangle::basicInfo(){
     cout << "IsoscelesTriangle dump:" << endl;
     Shape::basicInfo();
 }
 
+/// @brief print otherInfo of the isoscelesTriangle (area, perimeter, text)
 void IsoscelesTriangle::otherInfo(){
     Shape::otherInfo();
 }
