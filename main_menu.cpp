@@ -22,22 +22,22 @@ int main() {
     
         switch(status) {
             case 1:
-                manager.VisualizzaTutti();
+                manager.printAll();
                 break;
             case 2:
-                manager.ModificaPoligono();
+                manager.modifyPol();
                 break;
             case 3:
-                manager.SpostaPoligono();   
+                manager.movePol();   
                 break;
             case 4:
-                manager.InserisciPoligono();
+                manager.newPol();
                 break;
             case 5:
-                manager.CancellaPoligono();
+                manager.rmPol();
                 break;
             case 6: 
-                manager.CancellaTutto(); 
+                manager.rmAll(); 
                 cout << "Tutti i poligoni eliminati." << endl;
                 break;
             case 0: 
