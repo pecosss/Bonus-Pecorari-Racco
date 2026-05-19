@@ -47,6 +47,9 @@ public:
     /// @name DEBUG and SERIALIZATION
     /// @{
     void Dump() override;
+
+    void basicInfo();
+    void otherInfo();
     /// @}
 };
 

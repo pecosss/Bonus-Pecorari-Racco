@@ -147,3 +147,12 @@ void IsoscelesTriangle::Dump()
 	cout << endl;
 
 }
+
+void IsoscelesTriangle::basicInfo(){
+    cout << "IsoscelesTriangle dump:" << endl;
+    Shape::basicInfo();
+}
+
+void IsoscelesTriangle::otherInfo(){
+    Shape::otherInfo();
+}

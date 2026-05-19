@@ -365,3 +365,22 @@ void Shape::Dump()
  	
 	cout << endl;
 }
+
+void Shape::basicInfo()
+{
+    std::cout << "  Position: (" << x << ", " << y << ")" << std::endl;
+    std::cout << "  Width:  " << width << std::endl;
+    std::cout << "  Height: " << height << std::endl;
+    std::cout << "  Bounding Box Area:   " << GetBoundingBoxArea() << std::endl;
+ 	
+	cout << endl;
+}
+
+void Shape::otherInfo()
+{
+    cout << "  Figure area:         " << GetArea() << endl;
+    cout << "  Figure perimeter:    " << GetPerimeter() << endl;
+    cout << "  Text:                " << (text ? text : "(null)") << endl;
+ 	
+	cout << endl;
+}

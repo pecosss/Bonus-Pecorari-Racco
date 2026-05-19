@@ -150,3 +150,12 @@ void Rhombus::Dump()
 	cout << endl;
 
 }
+
+void Rhombus::basicInfo(){
+    cout << "Rhombus dump:" << endl;
+    Shape::basicInfo();
+}
+
+void Rhombus::otherInfo(){
+    Shape::otherInfo();
+}
